@@ -62,7 +62,7 @@ function message (e){
   this.style.background = `#${e.offsetX}`;
 }
 
-*/
+
 
 // class 67 json syntax
 
@@ -80,3 +80,36 @@ var student_json = JSON.stringify(student)
 console.log(student_json);
 var student_new = JSON.parse(student_json);
 console.log(student_new);
+
+*/
+// class 68 json data types
+
+//http://jsonlint.com
+//string
+//number
+//object
+//array
+//boolean
+//null
+
+//doesn't support date, undefine
+
+var person = {
+  name: "Abdullah",
+  age: 3,
+  hometown: " Tangail",
+  married: false,
+  dob: 1999 - 11 -12,
+  test_null: null,
+  test_undefine: undefined,
+  graet: function() {
+    console.log(`Hello ${this.name}`);
+  }
+
+};
+
+var person_json = JSON.stringify(person);
+console.log(person_json);
+
+
+
